@@ -132,7 +132,7 @@ console.log(convertChange(75));
 // if(boxChar === undefined){
 //     boxChar = "X";
 // }
-// you could also write the code below to assign the value to the boxChar variable 
+
 // let boxChar = boxChar || "X";
 
 // for (let r = 0; r < numRows; r++) {
@@ -143,9 +143,23 @@ console.log(convertChange(75));
 //     console.log(line);
 // }
 
+function drawBox(numRows, numCols, boxChar) {
+
+
+boxChar = boxChar || "X";
+
+for (let r = 0; r < numRows; r++) {
+    let line = "";
+    for (let c = 0; c < numCols; c++) {
+        line += boxChar;
+    }
+    console.log(line);
+}
+}
+
 // call our new function with different arguments
 // TO DO
-
+drawBox(5, 12, "*")
 
 // ------------------------------------
 // CODE BELOW IS COMPLETE - DO NOT EDIT
