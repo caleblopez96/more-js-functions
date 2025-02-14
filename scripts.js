@@ -99,7 +99,7 @@ addToPage("current value of number is ", numberVar)
 // [quarters, dimes, nickels, pennies]
 // TO DO
 
-function convertChange(change) {
+function calcChange(change) {
   let quarters = Math.floor(change / 25);
   change = change - (quarters * 25);
   let dimes = Math.floor(change / 10);
